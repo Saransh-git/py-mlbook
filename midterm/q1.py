@@ -1,19 +1,17 @@
-import pandas
+import math
+
+import matplotlib.pyplot as plt
 import numpy
+import pandas
+import sklearn.cluster as cluster
+import sklearn.metrics as metrics
 from scipy.stats import iqr
-
-
 
 data_points_iqr = numpy.array([0.1811, 0.0775, 0.1279, 0.0045, 0.0001, 0.9457, 0.0021, 0, 0.0005, 0.7305, 0.8936])
 #for i in data_points_iqr:
 print("The IQR for the series of given numbers is {} " .format(iqr(data_points_iqr)))
 
-import pandas
-import numpy
-import sklearn.cluster as cluster
-import sklearn.metrics as metrics
-import math
-import matplotlib.pyplot as plt
+
 
 pothole_data = pandas.read_csv("~/Desktop/machine learning/assignments/ChicagoCompletedPotHole.csv")
 
