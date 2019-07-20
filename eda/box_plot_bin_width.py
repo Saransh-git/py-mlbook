@@ -38,6 +38,7 @@ def seq_generator(start, end, step=1):
     while start <= end:
         yield start
         start = round(start + step, 2)
+    raise StopIteration
 
 
 bin_widths = [0.1, 0.5, 1, 2]  # histogram bin widths as given in question
